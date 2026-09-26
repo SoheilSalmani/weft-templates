@@ -1,0 +1,10 @@
+[template]
+name = "base"
+weft-version = "0.1"
+description = "TODO: what this template scaffolds."
+
+[[question]]
+id = "use_linear"
+kind = "bool"
+prompt = "Wire the Linear skill?"
+default = "False"

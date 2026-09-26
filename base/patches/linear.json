@@ -1,0 +1,30 @@
+{
+  "title": "Linear issue-tracking skill",
+  "depends_on": [
+    "skills"
+  ],
+  "when": "use_linear",
+  "ops": [
+    {
+      "op": "modify_file",
+      "path": "AGENTS.md",
+      "hunks": [
+        {
+          "context_before": [
+            "## issue tracking",
+            ""
+          ],
+          "removed": [
+            "None wired."
+          ],
+          "added": [
+            "Linear: link the issue in every PR."
+          ],
+          "context_after": [
+            "Ask before creating tickets."
+          ]
+        }
+      ]
+    }
+  ]
+}

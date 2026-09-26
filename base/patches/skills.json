@@ -1,0 +1,25 @@
+{
+  "title": "Agent skills entry point",
+  "ops": [
+    {
+      "op": "create_file",
+      "path": "AGENTS.md",
+      "content": [
+        "# Agent skills",
+        "",
+        "Read this file before touching the repository.",
+        "",
+        "## git",
+        "",
+        "Commit small, describe why.",
+        "Never force-push a shared branch.",
+        "",
+        "## issue tracking",
+        "",
+        "None wired.",
+        "Ask before creating tickets."
+      ],
+      "mode": 420
+    }
+  ]
+}
