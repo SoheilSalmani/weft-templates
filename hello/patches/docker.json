@@ -1,0 +1,19 @@
+{
+  "title": "Add Docker support",
+  "depends_on": [
+    "base"
+  ],
+  "when": "use_docker",
+  "ops": [
+    {
+      "op": "create_file",
+      "path": "Dockerfile",
+      "content": [
+        "FROM python:3.12-slim",
+        "COPY . ./app",
+        "WORKDIR /app"
+      ],
+      "mode": 420
+    }
+  ]
+}

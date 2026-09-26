@@ -1,0 +1,36 @@
+{
+  "title": "Initialize project",
+  "ops": [
+    {
+      "op": "create_file",
+      "path": "README.md",
+      "content": [
+        [
+          "# ",
+          {
+            "answer": "project_name"
+          }
+        ],
+        "",
+        "Scaffolded with Weft."
+      ],
+      "mode": 420
+    },
+    {
+      "op": "create_file",
+      "path": "pyproject.toml",
+      "content": [
+        "[project]",
+        [
+          "name = \"",
+          {
+            "answer": "package_name"
+          },
+          "\""
+        ],
+        "version = \"0.1.0\""
+      ],
+      "mode": 420
+    }
+  ]
+}

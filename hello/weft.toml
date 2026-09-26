@@ -1,0 +1,22 @@
+[template]
+name = "hello"
+weft-version = "0.1"
+description = "TODO: what this template scaffolds."
+
+[[question]]
+id = "project_name"
+kind = "string"
+prompt = "Project name"
+example = "Trendlift"
+
+[[question]]
+id = "package_name"
+kind = "string"
+default = "project_name.lower().replace(' ', '-')"
+prompt = "Package name"
+
+[[question]]
+id = "use_docker"
+kind = "bool"
+default = "True"
+prompt = "Include a Dockerfile?"
