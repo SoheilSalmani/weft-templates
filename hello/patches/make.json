@@ -1,0 +1,24 @@
+{
+  "title": "Add a Makefile",
+  "depends_on": [
+    "base"
+  ],
+  "ops": [
+    {
+      "op": "create_file",
+      "path": "Makefile",
+      "content": [
+        ".PHONY: dev",
+        "dev:",
+        [
+          "\techo \"starting ",
+          {
+            "answer": "project_name"
+          },
+          "\""
+        ]
+      ],
+      "mode": 420
+    }
+  ]
+}
